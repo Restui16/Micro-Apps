@@ -9,7 +9,8 @@ export const Navbar: React.FC = () => {
                     <div className="h-9" >
                         <img className="h-full" src={brandLogo} alt="img-logo" />
                     </div>
-                    <p>PEMILU PRESIDEN DUMBWAYS.ID</p>
+                    <p className="hidden md:inline-block" >PEMILU PRESIDEN DUMBWAYS.ID</p>
+
                 </div>
 
                 <div className="flex items-center gap-10">
@@ -21,7 +22,10 @@ export const Navbar: React.FC = () => {
                         <a href="">Voting</a>
                     </div>
 
-                    <ButtonLogin />
+                    <div>
+                        <ButtonLogin />
+                        <button className="inline-block md:hidden"><i className="fa-solid fa-bars fa-xl"></i></button>
+                    </div>
                 </div>
             </div>
 
